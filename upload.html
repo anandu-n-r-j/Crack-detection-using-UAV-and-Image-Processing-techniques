@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <script>
+        function resetUpload() {
+            // Reset the input element to clear the selected file
+            document.getElementById('file-upload').value = '';
+        }
+    </script>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file-upload" accept=".jpg, .jpeg, .png" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
