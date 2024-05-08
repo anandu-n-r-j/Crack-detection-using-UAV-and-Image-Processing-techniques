@@ -2,14 +2,13 @@
 
 ## Introduction
 
-The **Crack Detection using UAV and Image Processing Techniques** project focuses on utilizing unmanned aerial vehicles (UAVs) and advanced image processing algorithms to detect cracks in infrastructure such as roads, bridges, and buildings. This repository contains the necessary files and code for implementing crack detection using aerial imagery.
+The **Crack Detection using UAV and Image Processing Techniques** project focuses on utilizing images collected using unmanned aerial vehicles (UAVs) and advanced image processing algorithms to detect cracks in infrastructure such as roads, bridges, and buildings. This repository contains the necessary files and code for implementing crack detection using aerial imagery.
 
 ## Features
 
-- **UAV-based Imaging**: Utilizes UAVs for efficient and comprehensive aerial imaging of infrastructure.
+- **UAV-based Imaging**: Utilizes images collected using UAVs.
 - **Image Processing Techniques**: Implements advanced image processing algorithms for crack detection and analysis.
 - **Real-time Detection**: Enables real-time detection and analysis of cracks, facilitating timely interventions.
-- **Customizable**: The code is customizable to accommodate different UAV platforms and imaging requirements.
 
 ## Environment Setup
 
@@ -37,21 +36,10 @@ The **Crack Detection using UAV and Image Processing Techniques** project focuse
 
 #### Image Processing
 
-- **Preprocessing**: Preprocess UAV-captured images to enhance quality and optimize for crack detection.
-- **Crack Detection**: Utilize image processing techniques such as edge detection and morphological operations for crack identification.
-- **Analysis**: Analyze detected cracks based on size, shape, and severity.
-
-#### Integration with UAV
-
-- **UAV Image Capture**: Integrate the image processing pipeline with UAVs for seamless data acquisition and analysis.
-- **Real-time Monitoring**: Implement real-time crack detection during UAV flights for immediate feedback to operators.
-
-### Additional Notes
-
-- Customize the image processing pipeline and parameters based on specific imaging conditions and infrastructure types.
-- Ensure proper calibration and alignment of UAV cameras for accurate image capture.
-- Experiment with different image processing algorithms and techniques to improve crack detection accuracy and efficiency.
-
+- **Preprocessing**: Preprocess UAV-captured images to enhance quality and optimize for crack detection like denoising the images.
+- **Crack Detection**: Detect the crack using CNN model and segment it using U-Net model.
+- **Analysis**: Find the width from the segmented image by contouring the image and then finding the distance between the opposite edge.
+- **Application**: Uploading the image in the application, then showing the results including detection,width measurement.
 ## Repository Structure
 
 - `README.md`: Overview and instructions for the project.
@@ -60,14 +48,5 @@ The **Crack Detection using UAV and Image Processing Techniques** project focuse
 - `integration_with_UAV.py`: Integration code for connecting with UAV systems.
 - `requirements.txt`: List of required Python modules for installation.
 
-## Contributors
-
-- [Your Name or Team Name]
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
 
 Feel free to explore and contribute to this project, advancing the field of infrastructure inspection and maintenance through UAV and image processing technologies.
