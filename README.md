@@ -43,9 +43,13 @@ The **Crack Detection using UAV and Image Processing Techniques** project focuse
 ## Repository Structure
 
 - `README.md`: Overview and instructions for the project.
-- `preprocessing.py`: Code for preprocessing UAV-captured images.
-- `crack_detection.py`: Implementation of crack detection algorithms.
-- `integration_with_UAV.py`: Integration code for connecting with UAV systems.
+- `add_noise_to_images.py`: Adding noise to the images for analysis.
+- `app_denoising.py` : Application for denoising the images
+- `crack_detection_using_cnn.py`: Implementation of crack detection algorithms.
+- `Evaluate_denoising.py`:Evaluate the denoised images using PSNR values.
+- `app_detection.py`:Application for crack detection.
+- `train_segmentation.py`:Code for segementing the images.
+- `finding_width.py`:Finding the width of the crack.
 - `requirements.txt`: List of required Python modules for installation.
 
 
